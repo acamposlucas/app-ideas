@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Bin2Dec</title>
+	</head>
+	<body class="bg-zinc-900 text-zinc-900">
+		<div class="w-11/12 h-screen mx-auto grid place-items-center">
+			<main>
+				<div
+					class="p-4 min-w-64 max-w-xs bg-zinc-300 text-lg rounded-md flex items-center flex-col gap-4 text-center">
+					<label for="binary"
+						>Enter a binary number to convert:
+					</label>
+					<input
+						type="text"
+						id="binary"
+						pattern="^[0-1]+$"
+						maxlength="8"
+						placeholder="100101 (up to 8 bits)"
+						class="p-1 rounded-md w-full text-center border-2 text-zinc-500 bg-zinc-100 border-transparent invalid:animate-bounce invalid:border-red-600 invalid:text-red-600 outline-none" />
+					<h1 class="text-4xl">
+						<span id="result">37</span
+						><small class="text-xs">10</small>
+					</h1>
+				</div>
+			</main>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
