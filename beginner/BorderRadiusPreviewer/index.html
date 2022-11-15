@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<title>Border Radius Previewer</title>
+	</head>
+	<body class="bg-zinc-900">
+		<main
+			class="max-w-6xl w-11/12 mx-auto grid place-items-center min-h-screen">
+			<div class="p-4 bg-zinc-300 w-64 rounded-md">
+				<div class="w-full flex justify-between">
+					<div class="mb-1 flex items-center flex-col">
+						<label for="rounded-tl" class="">Top left:</label>
+						<input
+							type="text"
+							id="rounded-tl"
+							class="w-12 text-center text-sm py-1 rounded-md" />
+					</div>
+					<div class="mb-1 flex items-center flex-col">
+						<label for="rounded-t" class="">Top right:</label>
+						<input
+							type="text"
+							id="rounded-t"
+							class="w-12 text-center text-sm py-1 rounded-md" />
+					</div>
+				</div>
+				<div id="box" class="w-32 h-32 my-4 mx-auto bg-blue-600"></div>
+				<div class="w-full flex justify-between">
+					<div class="mb-1 flex items-center flex-col">
+						<label for="rounded-bl" class="">Bottom left:</label>
+						<input
+							type="text"
+							id="rounded-bl"
+							class="w-12 text-center text-sm py-1 rounded-md" />
+					</div>
+					<div class="mb-1 flex items-center flex-col">
+						<label for="rounded-b" class="">Bottom right:</label>
+						<input
+							type="text"
+							id="rounded-b"
+							class="w-12 text-center text-sm py-1 rounded-md" />
+					</div>
+				</div>
+				<textarea id="css"> </textarea>
+				<button
+					type="button"
+					onclick="copyToClipboard()"
+					class="p-2 bg-blue-300 rounded-md mt-4 mx-auto block">
+					Copy!
+				</button>
+			</div>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>
